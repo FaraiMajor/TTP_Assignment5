@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+</head>
+
+<body>
+    <div class="menu-buttons">
+        <button type="button" id="row-btn">Add Row</button>
+        <button type="button" id="remove-row">Remove Row</button>
+        <button type="button" id="column-btn">Add Column</button>
+        <button type="button" id="remove-column">Remove Column</button>
+        <!-- Colour selectors dropdown menu. -->
+        <select name="color" id="color-el" onchange="pickColor()">
+                <!-- Adding colors: -->
+                <option value="" selected="select-el">Please select a color</option>               
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>  
+                <option value="purple">Purple</option> 
+                <option value="brown">Brown</option>
+                <option value="white">White</option>
+                <option value="gray">Gray</option>
+            </select>
+        <button type="button" id="fillUncolored">Fill Uncoloured</button>
+        <button type="button" id="fillAll">Fill All</button>
+        <button type="button" id="clearAll">Clear All</button>
+    </div>
+</body>
+
+</html>
