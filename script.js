@@ -1,6 +1,8 @@
 let columns = 1;
 let mouseOver = false;
+let colorEl = document.getElementById('color')
 
+//this adds rows to our grid
 function addRow() {
     let table = document.getElementById("myTable");
     let row = document.createElement("tr");
@@ -13,7 +15,7 @@ function addRow() {
     }
 }
 
-
+//this deletes rows to our grid
 function deleteRow() {
     let row = document.getElementsByClassName("row");
     let tr = Array.from(row);
@@ -21,7 +23,7 @@ function deleteRow() {
 }
 
 
-
+//this add column to out grid
 function addColumn() {
     let row = document.getElementsByClassName("row");
     let tr = Array.from(row);
@@ -33,7 +35,7 @@ function addColumn() {
     columns++;
 }
 
-
+// deletes columns on our grid
 function deleteColumn() {
     let row = document.getElementsByClassName("row");
     let tr = Array.from(row);
@@ -48,7 +50,7 @@ function deleteColumn() {
 }
 
 
-
+//fill up uncolored cells
 function fillUncolored() {
     let color = document.querySelector("#color").value
     let allCells = document.getElementsByTagName("td");
@@ -59,7 +61,7 @@ function fillUncolored() {
     }
 }
 
-
+//fills all cells with selected color
 function fillAll() {
     let color = document.querySelector("#color").value
     let allCells = document.getElementsByTagName("td");
@@ -68,7 +70,7 @@ function fillAll() {
     }
 }
 
-
+//clear all cell colors
 function clearAll() {
     let allCells = document.getElementsByTagName("td");
     for (let i = 0; i < allCells.length; i++) {
@@ -76,7 +78,7 @@ function clearAll() {
     }
 }
 
-
+//mouse functions for individual cells
 function colorChange(cell) {
     let color = document.querySelector("#color").value
     cell.addEventListener("click", function() {
