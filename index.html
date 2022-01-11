@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="menu-buttons">
-        <button type="button" id="row-btn">Add Row</button>
-        <button type="button" id="remove-row">Remove Row</button>
-        <button type="button" id="column-btn">Add Column</button>
-        <button type="button" id="remove-column">Remove Column</button>
+        <button type="button" id="row-btn" onclick="addRow()">Add Row</button>
+        <button type="button" id="remove-row" onclick="deleteRow()">Remove Row</button>
+        <button type="button" id="column-btn" onclick="addColumn()">Add Column</button>
+        <button type="button" id="remove-column" onclick="deleteColumn()">Remove Column</button>
         <!-- Colour selectors dropdown menu. -->
         <select name="color" id="color-el" onchange="pickColor()">
                 <!-- Adding colors: -->
@@ -32,6 +33,15 @@
         <button type="button" id="fillAll">Fill All</button>
         <button type="button" id="clearAll">Clear All</button>
     </div>
+
+    <table id='myTable'>
+        <tr id='myRow'>
+            <td></td>
+        </tr>
+
+    </table>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    margin-left: 40px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+body {
+    background-color: gainsboro;
+    margin: 0 auto
+}
+
+#ttbody {
+    background-color: white;
+}
+
+tr {
+    background-color: transparent;
+}

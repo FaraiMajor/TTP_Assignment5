@@ -1,14 +1,39 @@
-const addRowEl = document.getElementById('row-btn');
-const removeRowEl = document.getElementById('remove-row');
-const addColumnEl = document.getElementById('column-btn');
-const removeColumnEl = document.getElementById('remove-column');
-const colorSelectEl = document.getElementById('color-el');
-const uncoloredFillerEl = document.getElementById('fillUncolored');
-const fillEl = document.getElementById('fillAll');
-const clearEl = document.getElementById('clearAll');
+let table = document.getElementById('myTable');
 
-let defaultColor = 'white'
+function addRow() {
+    if (table.rows.length === 0) {
+        let addRow = table.insertRow(0);
+        let cell = addRow.insertCell(0)
+    } else {
+        let addRow = table.insertRow(0);
+        let e = table.rows.length - 1;
+        let len = table.rows[e].cells.length;
 
-function pickColor() {
-    defaultColor = colorSelectEl.value;
+        for (let i = 0; i < len; i++) {
+            table.rows[0].insertCell(i);
+            table.rows[0].cells[i].innerHTML = "";
+        }
+    }
+}
+
+
+function addColumn() {
+    if (table.rows.length === 0) {
+        addRow();
+    } else {
+        for (let i = 0; i < table.rows.length; i++) {
+            table.rows[i].insertCell(0);
+            table.rows[i].cells[0].innerHTML = "";
+        }
+    }
+}
+
+function deleteRow() {
+    document.getElementById("myTable").deleteRow(0);
+}
+
+function deleteColumn() {
+    for (let r = 0; r < table.rows.length; r++) {
+        table.rows[r].deleteCell(0); // var table handle
+    }
 }
