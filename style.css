@@ -1,22 +1,121 @@
-table {
-    border-collapse: collapse;
-    margin-left: 40px;
-}
-
-td {
-    border: 1px solid black;
-    padding: 20px;
-}
-
 body {
     background-color: gainsboro;
     margin: 0 auto
 }
 
-#ttbody {
-    background-color: white;
+.menu-buttons {
+    width: 100%;
+    padding: 20px;
+    background-color: darkkhaki;
+    border-radius: 10px;
+    box-shadow: 5px 10px #c5c3c3;
+    border: none;
 }
 
-tr {
-    background-color: transparent;
+button {
+    margin: 0 auto;
+    border: none;
+    border-radius: 12px;
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#row-btn {
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+}
+
+#row-btn:hover {
+    background-color: gold;
+    transition: all 200ms ease-in;
+}
+
+#remove-row {
+    background-color: black;
+    margin: 0 3px;
+}
+
+#remove-row:hover {
+    background-color: gold;
+    transition: all 200ms ease-in;
+}
+
+#column-btn {
+    background-color: white;
+    color: black;
+}
+
+#column-btn:hover {
+    background-color: gold;
+    transition: all 200ms ease-in;
+}
+
+#remove-column {
+    background-color: black;
+    margin: 0 3px;
+}
+
+#remove-column:hover {
+    background-color: gold;
+    transition: all 200ms ease-in;
+}
+
+#color {
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#fillUncolored {
+    background-color: green;
+    margin: 0 3px;
+}
+
+#fillUncolored:hover {
+    background-color: gold;
+    transition: all 200ms ease-in;
+}
+
+#fillAll {
+    background-color: green;
+    margin: 0 3px;
+}
+
+#fillAll:hover {
+    background-color: gold;
+    transition: all 200ms ease-in;
+}
+
+#clearAll {
+    background-color: red;
+    margin: 0 3px;
+}
+
+#clearAll:hover {
+    background-color: white;
+    transition: all 200ms ease-in;
+}
+
+table {
+    margin: 40px;
+    display: block;
+    align-items: center;
+    width: fit-content;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+tr,
+td {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+#myTable {
+    background-color: whitesmoke;
+    margin: 60px auto;
 }

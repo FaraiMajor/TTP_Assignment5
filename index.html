@@ -10,13 +10,15 @@
 </head>
 
 <body>
+
+    <!--Menu button and options-->
     <div class="menu-buttons">
         <button type="button" id="row-btn" onclick="addRow()">Add Row</button>
         <button type="button" id="remove-row" onclick="deleteRow()">Remove Row</button>
         <button type="button" id="column-btn" onclick="addColumn()">Add Column</button>
         <button type="button" id="remove-column" onclick="deleteColumn()">Remove Column</button>
         <!-- Colour selectors dropdown menu. -->
-        <select name="color" id="color-el" onchange="pickColor()">
+        <select name="color" id="color">
                 <!-- Adding colors: -->
                 <option value="" selected="select-el">Please select a color</option>               
                 <option value="black">Black</option>
@@ -29,15 +31,13 @@
                 <option value="white">White</option>
                 <option value="gray">Gray</option>
             </select>
-        <button type="button" id="fillUncolored">Fill Uncoloured</button>
-        <button type="button" id="fillAll">Fill All</button>
-        <button type="button" id="clearAll">Clear All</button>
+        <button type="button" id="fillUncolored" onclick="fillUncolored()">Fill Uncoloured</button>
+        <button type="button" id="fillAll" onclick="fillAll()">Fill All</button>
+        <button type="button" id="clearAll" onclick="clearAll()">Clear All</button>
     </div>
 
-    <table id='myTable'>
-        <tr id='myRow'>
-            <td></td>
-        </tr>
+    <!--Table and grid cells-->
+    <table id="myTable">
 
     </table>
 
